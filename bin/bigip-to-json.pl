@@ -8,7 +8,6 @@ use diagnostics;
 use Data::Dumper;
 
 push(@INC, $ENV{'HOME'} . '/projects/perl-bigip-parseconfig/blib/lib');
-# push(@INC, '/home/users/achim.dreyer/projects/perl-bigip-parseconfig/blib/lib');
 use BigIP::ParseConfig;
 
 my $file = ($ARGV[0]) ? $ARGV[0] : '/config/bigip.conf';
@@ -33,3 +32,4 @@ print Dumper $bip;
 # Write out a new config file
 $bip->write( $file . '.new' );
 
+exit 0;
