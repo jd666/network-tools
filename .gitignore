@@ -1,0 +1,9 @@
+**/RCS/
+*.DS_Store
+*.bak
+*.orig
+*.pyc
+*.pyo
+*~
+tmp/
+.linter-*
